@@ -10,7 +10,7 @@ Time spent: **3.5** hours spent in total
 
 Here's a walkthrough of implemented user stories:
 
-<img src='public\WEB102-lab6-crypto.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='public\WEB102-lab5-crypto.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with ...
 
