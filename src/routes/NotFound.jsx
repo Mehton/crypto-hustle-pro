@@ -1,7 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NotFound = () => {
-  console.log("Why is it not working;");
-  return <h1>Somthind</h1>;
+  return (
+    <>
+      <h1 style={{ color: "white", padding: "1rem" }}>Crypto Hustle</h1>
+      <p>There's nothing here!</p>
+      <Link style={{ color: "white", padding: "1rem" }} to="/">
+        Back to Home
+      </Link>
+    </>
+  );
 };
 export default NotFound;

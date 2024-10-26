@@ -3,8 +3,8 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./routes/Layout";
 import DetailView from "./routes/DetailView";
-// import NotFound from "./routes/NotFound";
-import { Link } from "react-router-dom";
+import NotFound from "./routes/NotFound";
+
 import App from "./App.jsx";
 import "./index.css";
 
@@ -19,17 +19,7 @@ createRoot(document.getElementById("root")).render(
             path="/CoinDetail/:symbol"
             element={<DetailView />}
           />
-          <Route
-            path="*"
-            element={
-              <main style={{ padding: "1rem" }}>
-                <p>There's nothing here!</p>
-                <Link style={{ color: "white" }} to="/">
-                  Back to Home
-                </Link>
-              </main>
-            }
-          />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
